@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'tweets'
 ]
 
@@ -52,6 +53,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tweetme2.urls'
+
+MAX_LENGTH = 240
 
 TEMPLATES = [
     {
@@ -82,6 +85,7 @@ DATABASES = {
     }
 }
 
+LOGIN_URL = "/login/"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
