@@ -55,6 +55,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'tweetme2.urls'
 
 MAX_LENGTH = 240
+TWEET_ACTION_OPTIONS = ["like", "unlike", "retweet"]
 
 TEMPLATES = [
     {
